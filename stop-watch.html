@@ -1,0 +1,33 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="stop-watch.css">
+	</head>
+	<body>
+	<div id="main">
+		<h1>Stop Watch</h1>
+		<div id="circle">
+			<div id="timer">
+				<div class="clock">
+					<span id="mins-left">25</span>m : <span id="secs-left">00</span>s
+				</div>
+			</div>
+		</div><br>
+		<div>
+			<button class="button start" id="start" onclick="startTimer()">Start</button>
+			<button class="button stop" id="stop" onclick="stopTimer()">Stop</button>
+			<button class="button reset" id="reset" onclick="resetTimer()">Reset</button>
+		</div>
+			<div id="session">
+				<h4>Session length</h4>
+				<span id="more" onclick="more()"><i class="fa fa-plus-square-o"></i></span> 
+				<span id="less" onclick="less()"><i class="fa fa-minus-square-o"></i></span>
+			</div>
+	</div>
+<script src="stop-watch.js"></script>	
+</body>
+</html>
+
+
